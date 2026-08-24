@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Registration - CareerAI</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Registration CSS -->
+    <link rel="stylesheet" href="ragistration.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+
+            <div>
+                <h2>Career<span>AI</span></h2>
+                <p>Student Career & Internship Advisor</p>
+            </div>
+
+        </div>
+
+
+        <nav>
+
+            <a href="home.html">
+                <i class="fa-solid fa-house"></i>
+                Home
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-circle-info"></i>
+                About
+            </a>
+
+            <a href="#">
+                <i class="fa-regular fa-star"></i>
+                Features
+            </a>
+
+            <a href="#">
+                <i class="fa-regular fa-circle-question"></i>
+                How It Works
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-phone"></i>
+                Contact
+            </a>
+
+        </nav>
+
+
+        <div class="nav-buttons">
+
+            <button class="login-btn">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                Login
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= REGISTRATION HERO ================= -->
+
+    <section class="registration-section">
+
+
+        <!-- LEFT SIDE -->
+
+        <div class="registration-left">
+
+            <h1>
+                Create Your<br>
+                <span>Student Profile</span>
+            </h1>
+
+            <p>
+                Tell us about yourself and get personalized
+                career and internship recommendations.
+            </p>
+
+            <div class="yellow-line"></div>
+
+
+            <!-- Illustration -->
+
+            <div class="student-illustration">
+
+                <div class="circle-bg"></div>
+
+                <div class="target">
+                    🎯
+                </div>
+
+                <div class="bulb">
+                    💡
+                </div>
+
+                <div class="chart">
+                    📊
+                </div>
+
+                <div class="student">
+                    👨🏻‍💻
+                </div>
+
+            </div>
+
+
+            <!-- Security Card -->
+
+            <div class="security-card">
+
+                <div class="security-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+
+                <div>
+                    <h3>100% Secure</h3>
+
+                    <p>
+                        Your data is safe with us.<br>
+                        We value your privacy.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT SIDE FORM -->
+
+        <div class="registration-card">
+
+
+            <!-- Heading -->
+
+            <div class="form-heading">
+
+                <div class="heading-line"></div>
+
+                <h2>Student Registration</h2>
+
+                <div class="heading-line"></div>
+
+            </div>
+
+            <p class="subtitle">
+                Please fill in your details to get started
+            </p>
+
+
+            <!-- ================= FORM ================= -->
+
+            <form id="registrationForm">
+
+
+                <!-- PERSONAL INFORMATION -->
+
+                <div class="form-section personal">
+
+                    <div class="section-title">
+
+                        <span class="number">1</span>
+
+                        <h3>Personal Information</h3>
+
+                        <i class="fa-solid fa-user"></i>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label>
+                                Full Name <span>*</span>
+                            </label>
+
+                            <div class="input-box">
+
+                                <i class="fa-regular fa-user"></i>
+
+                                <input type="text"
+                                    id="name"
+                                    placeholder="Enter your full name"
+                                    required>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>
+                                Email Address <span>*</span>
+                            </label>
+
+                            <div class="input-box">
+
+                                <i class="fa-regular fa-envelope"></i>
+
+                                <input type="email"
+                                    id="email"
+                                    placeholder="Enter your email address"
+                                    required>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- EDUCATION DETAILS -->
+
+                <div class="form-section education">
+
+                    <div class="section-title">
+
+                        <span class="number">2</span>
+
+                        <h3>Education Details</h3>
+
+                        <i class="fa-solid fa-graduation-cap"></i>
+
+                    </div>
+
+
+                    <div class="form-row three">
+
+
+                        <div class="form-group">
+
+                            <label>
+                                Education <span>*</span>
+                            </label>
+
+                            <div class="input-box">
+
+                                <i class="fa-solid fa-user-graduate"></i>
+
+                                <select id="education" required>
+
+                                    <option value="">
+                                        Select Education
+                                    </option>
+
+                                    <option>B.Tech</option>
+                                    <option>BCA</option>
+                                    <option>B.Sc</option>
+                                    <option>MCA</option>
+                                    <option>M.Tech</option>
+                                    <option>Other</option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>
+                                Branch / Stream <span>*</span>
+                            </label>
+
+                            <div class="input-box">
+
+                                <i class="fa-solid fa-code-branch"></i>
+
+                                <select id="branch" required>
+
+                                    <option value="">
+                                        Select Branch
+                                    </option>
+
+                                    <option>Computer Science</option>
+                                    <option>Information Technology</option>
+                                    <option>Electronics</option>
+                                    <option>Mechanical</option>
+                                    <option>Civil</option>
+                                    <option>Other</option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>
+                                College / University <span>*</span>
+                            </label>
+
+                            <div class="input-box">
+
+                                <i class="fa-regular fa-building"></i>
+
+                                <input type="text"
+                                    id="college"
+                                    placeholder="Enter college / university"
+                                    required>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+
+                        <div class="form-group">
+
+                            <label>
+                                CGPA / Percentage <span>*</span>
+                            </label>
+
+                            <div class="input-box">
+
+                                <i class="fa-solid fa-chart-line"></i>
+
+                                <input type="number"
+                                    id="cgpa"
+                                    step="0.01"
+                                    min="0"
+                                    max="10"
+                                    placeholder="e.g. 8.50"
+                                    required>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>
+                                Graduation Year <span>*</span>
+                            </label>
+
+                            <div class="input-box">
+
+                                <i class="fa-regular fa-calendar"></i>
+
+                                <select id="year" required>
+
+                                    <option value="">
+                                        Select Year
+                                    </option>
+
+                                    <option>2026</option>
+                                    <option>2027</option>
+                                    <option>2028</option>
+                                    <option>2029</option>
+                                    <option>2030</option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SKILLS AND INTERESTS -->
+
+                <div class="form-section skills">
+
+                    <div class="section-title">
+
+                        <span class="number">3</span>
+
+                        <h3>Skills & Interests</h3>
+
+                        <i class="fa-solid fa-code"></i>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+
+                        <div class="form-group">
+
+                            <label>
+                                Skills
+                                <small>(Add multiple skills)</small>
+                            </label>
+
+                            <div class="input-box">
+
+                                <i class="fa-solid fa-tag"></i>
+
+                                <input type="text"
+                                    id="skills"
+                                    placeholder="e.g. Python, Java, SQL, HTML">
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>
+                                Interests
+                                <small>(Add multiple interests)</small>
+                            </label>
+
+                            <div class="input-box">
+
+                                <i class="fa-solid fa-star"></i>
+
+                                <input type="text"
+                                    id="interests"
+                                    placeholder="e.g. AI/ML, Web Development, Data Science">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label>
+                                Experience Level <span>*</span>
+                            </label>
+
+                            <div class="input-box">
+
+                                <i class="fa-solid fa-user-tie"></i>
+
+                                <select id="experience" required>
+
+                                    <option>Fresher</option>
+                                    <option>Less than 1 Year</option>
+                                    <option>1-2 Years</option>
+                                    <option>2+ Years</option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CAREER PREFERENCE -->
+
+                <div class="form-section career">
+
+                    <div class="section-title">
+
+                        <span class="number">4</span>
+
+                        <h3>Career Preference</h3>
+
+                        <i class="fa-solid fa-bullseye"></i>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+
+                        <div class="form-group">
+
+                            <label>
+                                Preferred Domain <span>*</span>
+                            </label>
+
+                            <div class="input-box">
+
+                                <i class="fa-solid fa-briefcase"></i>
+
+                                <select id="domain" required>
+
+                                    <option value="">
+                                        Select Preferred Domain
+                                    </option>
+
+                                    <option>AI / Machine Learning</option>
+                                    <option>Data Science</option>
+                                    <option>Data Analytics</option>
+                                    <option>Web Development</option>
+                                    <option>Backend Development</option>
+                                    <option>Cyber Security</option>
+                                    <option>Cloud Computing</option>
+                                    <option>Software Development</option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- WORK MODE -->
+
+                        <div class="form-group">
+
+                            <label>
+                                Preferred Work Mode
+                            </label>
+
+                            <div class="radio-group">
+
+                                <label class="radio">
+
+                                    <input type="radio"
+                                        name="workmode"
+                                        value="On-site"
+                                        checked>
+
+                                    <span></span>
+
+                                    On-site
+
+                                </label>
+
+
+                                <label class="radio">
+
+                                    <input type="radio"
+                                        name="workmode"
+                                        value="Remote">
+
+                                    <span></span>
+
+                                    Remote
+
+                                </label>
+
+
+                                <label class="radio">
+
+                                    <input type="radio"
+                                        name="workmode"
+                                        value="Hybrid">
+
+                                    <span></span>
+
+                                    Hybrid
+
+                                </label>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SUBMIT BUTTON -->
+
+                <button type="submit" class="create-profile">
+
+                    <i class="fa-solid fa-user-plus"></i>
+
+                    Create My Profile
+
+                </button>
+
+
+                <p class="login-text">
+                    Already have an account?
+                    <a href="#">Login here</a>
+                </p>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- JavaScript -->
+    <script src="register.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CareerAI - Dashboard</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Dashboard CSS -->
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+            <div class="brand-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+
+            <div>
+                <h2>Career<span>AI</span></h2>
+                <p>Career Advisor</p>
+            </div>
+        </div>
+
+
+        <nav class="menu">
+
+            <a href="dashboard.html" class="active">
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </a>
+
+            <a href="ragistration.html">
+                <i class="fa-solid fa-user"></i>
+                My Profile
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-brain"></i>
+                Assessment
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-bullseye"></i>
+                Career
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-briefcase"></i>
+                Internships
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-chart-column"></i>
+                Skill Gap
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-route"></i>
+                Roadmap
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-file-lines"></i>
+                Resume Analyzer
+            </a>
+
+        </nav>
+
+
+        <div class="bottom-menu">
+
+            <a href="#">
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </a>
+
+            <a href="home(1).html">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                Logout
+            </a>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main">
+
+        <!-- TOPBAR -->
+
+        <header class="topbar">
+
+            <div>
+                <h1>Career Dashboard</h1>
+
+                <p>
+                    Your personalized career journey starts here.
+                </p>
+            </div>
+
+
+            <div class="top-right">
+
+                <button class="notification">
+                    <i class="fa-regular fa-bell"></i>
+                    <span></span>
+                </button>
+
+
+                <div class="profile">
+
+                    <div class="profile-img">
+                        H
+                    </div>
+
+                    <div>
+                        <strong>Himanshu</strong>
+                        <small>Student</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- ================= WELCOME ================= -->
+
+        <section class="welcome">
+
+            <div>
+
+                <small>WELCOME BACK 👋</small>
+
+                <h2>
+                    Hello, Himanshu!
+                </h2>
+
+                <p>
+                    Let's discover the right career path for your future.
+                </p>
+
+            </div>
+
+
+            <a href="#" class="assessment-btn">
+
+                <i class="fa-solid fa-brain"></i>
+
+                Start Assessment
+
+            </a>
+
+        </section>
+
+
+
+        <!-- ================= STAT CARDS ================= -->
+
+        <section class="stats">
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon purple">
+                    <i class="fa-solid fa-bullseye"></i>
+                </div>
+
+                <div>
+                    <p>Career Match</p>
+                    <h2>92%</h2>
+                    <small>Excellent match</small>
+                </div>
+
+            </div>
+
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon pink">
+                    <i class="fa-solid fa-brain"></i>
+                </div>
+
+                <div>
+                    <p>Skill Readiness</p>
+                    <h2>76%</h2>
+                    <small>Good progress</small>
+                </div>
+
+            </div>
+
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon green">
+                    <i class="fa-solid fa-briefcase"></i>
+                </div>
+
+                <div>
+                    <p>Internship Match</p>
+                    <h2>88%</h2>
+                    <small>12 opportunities</small>
+                </div>
+
+            </div>
+
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon orange">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+
+                <div>
+                    <p>Learning Progress</p>
+                    <h2>64%</h2>
+                    <small>Keep learning 🚀</small>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= CAREER + SKILL ================= -->
+
+        <section class="two-column">
+
+
+            <!-- CAREER RECOMMENDATION -->
+
+            <div class="card career-card">
+
+                <div class="card-header">
+
+                    <div>
+
+                        <span>AI RECOMMENDATION</span>
+
+                        <h2>
+                            🎯 Recommended Career
+                        </h2>
+
+                    </div>
+
+                    <div class="match-circle">
+                        92%
+                    </div>
+
+                </div>
+
+
+                <div class="career-name">
+
+                    <div class="career-icon">
+                        🤖
+                    </div>
+
+                    <div>
+                        <h3>AI / ML Engineer</h3>
+
+                        <p>
+                            Based on your skills & interests
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <p class="career-description">
+
+                    Your profile shows a strong interest in
+                    Python, Artificial Intelligence and
+                    problem solving. AI/ML Engineering could
+                    be a strong career path for you.
+
+                </p>
+
+
+                <div class="career-skills">
+
+                    <span>Python ✓</span>
+                    <span>SQL ✓</span>
+                    <span>Problem Solving ✓</span>
+                    <span>Machine Learning ⚠</span>
+
+                </div>
+
+
+                <button class="primary-btn">
+
+                    View Career Details
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </div>
+
+
+
+            <!-- SKILL GAP -->
+
+            <div class="card">
+
+                <div class="card-header">
+
+                    <div>
+
+                        <span>YOUR SKILLS</span>
+
+                        <h2>
+                            🧠 Skill Analysis
+                        </h2>
+
+                    </div>
+
+                    <i class="fa-solid fa-chart-simple chart-icon"></i>
+
+                </div>
+
+
+                <div class="skill-row">
+
+                    <div class="skill-info">
+
+                        <span>Python</span>
+
+                        <b>95%</b>
+
+                    </div>
+
+                    <div class="progress">
+
+                        <div class="progress-bar python"></div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="skill-row">
+
+                    <div class="skill-info">
+
+                        <span>SQL</span>
+
+                        <b>80%</b>
+
+                    </div>
+
+                    <div class="progress">
+
+                        <div class="progress-bar sql"></div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="skill-row">
+
+                    <div class="skill-info">
+
+                        <span>Machine Learning</span>
+
+                        <b>55%</b>
+
+                    </div>
+
+                    <div class="progress">
+
+                        <div class="progress-bar ml"></div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="skill-row">
+
+                    <div class="skill-info">
+
+                        <span>Deep Learning</span>
+
+                        <b>30%</b>
+
+                    </div>
+
+                    <div class="progress">
+
+                        <div class="progress-bar dl"></div>
+
+                    </div>
+
+                </div>
+
+
+                <button class="outline-btn">
+
+                    Analyze Skill Gap
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= INTERNSHIP ================= -->
+
+        <section class="card internship-section">
+
+            <div class="section-header">
+
+                <div>
+
+                    <span>AI MATCHED OPPORTUNITIES</span>
+
+                    <h2>
+                        💼 Recommended Internships
+                    </h2>
+
+                </div>
+
+                <a href="#">
+                    View All →
+                </a>
+
+            </div>
+
+
+
+            <div class="internship-grid">
+
+
+                <div class="internship-card">
+
+                    <div class="company-logo python-logo">
+                        🐍
+                    </div>
+
+                    <div class="internship-info">
+
+                        <h3>Python Developer Intern</h3>
+
+                        <p>Tech Solutions Pvt. Ltd.</p>
+
+                        <small>
+                            🌐 Remote &nbsp; • &nbsp; ₹10K/month
+                        </small>
+
+                    </div>
+
+                    <div class="match">
+
+                        94%
+                        <small>Match</small>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="internship-card">
+
+                    <div class="company-logo ai-logo">
+                        🤖
+                    </div>
+
+                    <div class="internship-info">
+
+                        <h3>AI / ML Intern</h3>
+
+                        <p>Innovation Labs</p>
+
+                        <small>
+                            📍 Bangalore &nbsp; • &nbsp; ₹15K/month
+                        </small>
+
+                    </div>
+
+                    <div class="match">
+
+                        87%
+                        <small>Match</small>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="internship-card">
+
+                    <div class="company-logo data-logo">
+                        📊
+                    </div>
+
+                    <div class="internship-info">
+
+                        <h3>Data Analyst Intern</h3>
+
+                        <p>DataWorks</p>
+
+                        <small>
+                            📍 Delhi &nbsp; • &nbsp; ₹12K/month
+                        </small>
+
+                    </div>
+
+                    <div class="match">
+
+                        81%
+                        <small>Match</small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= ROADMAP ================= -->
+
+        <section class="card roadmap-section">
+
+            <div class="section-header">
+
+                <div>
+
+                    <span>YOUR CAREER JOURNEY</span>
+
+                    <h2>
+                        🛣️ Career Roadmap
+                    </h2>
+
+                </div>
+
+                <a href="#">
+                    Full Roadmap →
+                </a>
+
+            </div>
+
+
+
+            <div class="roadmap">
+
+
+                <div class="road-step completed">
+
+                    <div class="step-circle">
+                        ✓
+                    </div>
+
+                    <h4>Python</h4>
+
+                    <small>Completed</small>
+
+                </div>
+
+
+                <div class="road-line completed-line"></div>
+
+
+                <div class="road-step completed">
+
+                    <div class="step-circle">
+                        ✓
+                    </div>
+
+                    <h4>SQL</h4>
+
+                    <small>Completed</small>
+
+                </div>
+
+
+                <div class="road-line completed-line"></div>
+
+
+                <div class="road-step current">
+
+                    <div class="step-circle">
+                        3
+                    </div>
+
+                    <h4>Machine Learning</h4>
+
+                    <small>In Progress</small>
+
+                </div>
+
+
+                <div class="road-line"></div>
+
+
+                <div class="road-step">
+
+                    <div class="step-circle">
+                        4
+                    </div>
+
+                    <h4>Deep Learning</h4>
+
+                    <small>Upcoming</small>
+
+                </div>
+
+
+                <div class="road-line"></div>
+
+
+                <div class="road-step">
+
+                    <div class="step-circle">
+                        5
+                    </div>
+
+                    <h4>Internship</h4>
+
+                    <small>Goal 🚀</small>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= FOOTER ================= -->
+
+        <footer>
+
+            <p>
+                © 2026 CareerAI • Student Career & Internship Advisor
+            </p>
+
+            <p>
+                Made with ❤️ for students
+            </p>
+
+        </footer>
+
+    </main>
+
+</body>
+</html>
