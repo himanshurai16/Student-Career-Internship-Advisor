@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Assessment - CareerAI</title>
+    <link rel="stylesheet" href="assesment.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>Career Assessment</h1>
+        <p>Answer these questions to discover the career path that matches your interests.</p>
+    </div>
+
+    <div class="progress-box">
+        <div class="progress-text">
+            <span>Assessment Progress</span>
+            <span id="progressText">0 / 15</span>
+        </div>
+        <div class="progress">
+            <div id="progressBar"></div>
+        </div>
+    </div>
+
+    <form id="assessmentForm">
+
+        <div class="question">
+            <h3>1. What do you enjoy most?</h3>
+            <label><input type="radio" name="q1" value="web"> Building websites</label>
+            <label><input type="radio" name="q1" value="data"> Working with data</label>
+            <label><input type="radio" name="q1" value="ai"> Creating intelligent systems</label>
+            <label><input type="radio" name="q1" value="programming"> Solving programming problems</label>
+        </div>
+
+        <div class="question">
+            <h3>2. How comfortable are you with programming?</h3>
+            <label><input type="radio" name="q2" value="programming"> Very comfortable</label>
+            <label><input type="radio" name="q2" value="web"> Comfortable with web coding</label>
+            <label><input type="radio" name="q2" value="data"> Somewhat comfortable</label>
+            <label><input type="radio" name="q2" value="ai"> I want to learn more</label>
+        </div>
+
+        <div class="question">
+            <h3>3. Which subject do you like most?</h3>
+            <label><input type="radio" name="q3" value="ai"> Artificial Intelligence</label>
+            <label><input type="radio" name="q3" value="data"> Statistics and Data</label>
+            <label><input type="radio" name="q3" value="programming"> Programming</label>
+            <label><input type="radio" name="q3" value="web"> Web Technologies</label>
+        </div>
+
+        <div class="question">
+            <h3>4. How much do you enjoy mathematics?</h3>
+            <label><input type="radio" name="q4" value="ai"> I love mathematics</label>
+            <label><input type="radio" name="q4" value="data"> I enjoy statistics</label>
+            <label><input type="radio" name="q4" value="programming"> I am average</label>
+            <label><input type="radio" name="q4" value="web"> I prefer practical work</label>
+        </div>
+
+        <div class="question">
+            <h3>5. What type of problem do you enjoy solving?</h3>
+            <label><input type="radio" name="q5" value="programming"> Logical programming problems</label>
+            <label><input type="radio" name="q5" value="ai"> Complex intelligent problems</label>
+            <label><input type="radio" name="q5" value="data"> Data-related problems</label>
+            <label><input type="radio" name="q5" value="web"> Website/UI problems</label>
+        </div>
+
+        <div class="question">
+            <h3>6. Which technology interests you most?</h3>
+            <label><input type="radio" name="q6" value="ai"> Machine Learning</label>
+            <label><input type="radio" name="q6" value="web"> HTML, CSS and JavaScript</label>
+            <label><input type="radio" name="q6" value="programming"> Java / Python</label>
+            <label><input type="radio" name="q6" value="data"> SQL and Data Analytics</label>
+        </div>
+
+        <div class="question">
+            <h3>7. What kind of project would you prefer?</h3>
+            <label><input type="radio" name="q7" value="ai"> AI-powered application</label>
+            <label><input type="radio" name="q7" value="web"> Website or web application</label>
+            <label><input type="radio" name="q7" value="data"> Data analysis project</label>
+            <label><input type="radio" name="q7" value="programming"> Software application</label>
+        </div>
+
+        <div class="question">
+            <h3>8. How do you approach a difficult problem?</h3>
+            <label><input type="radio" name="q8" value="programming"> Break it into smaller problems</label>
+            <label><input type="radio" name="q8" value="ai"> Research and experiment</label>
+            <label><input type="radio" name="q8" value="data"> Analyze available information</label>
+            <label><input type="radio" name="q8" value="web"> Try different practical solutions</label>
+        </div>
+
+        <div class="question">
+            <h3>9. What type of work environment do you prefer?</h3>
+            <label><input type="radio" name="q9" value="ai"> Research and innovation</label>
+            <label><input type="radio" name="q9" value="web"> Creative development</label>
+            <label><input type="radio" name="q9" value="data"> Analytical work</label>
+            <label><input type="radio" name="q9" value="programming"> Software development</label>
+        </div>
+
+        <div class="question">
+            <h3>10. How interested are you in AI?</h3>
+            <label><input type="radio" name="q10" value="ai"> Extremely interested</label>
+            <label><input type="radio" name="q10" value="data"> Interested in data science</label>
+            <label><input type="radio" name="q10" value="programming"> Interested in programming</label>
+            <label><input type="radio" name="q10" value="web"> Interested in web development</label>
+        </div>
+
+        <div class="question">
+            <h3>11. Which activity sounds most interesting?</h3>
+            <label><input type="radio" name="q11" value="data"> Finding patterns in data</label>
+            <label><input type="radio" name="q11" value="ai"> Training an ML model</label>
+            <label><input type="radio" name="q11" value="web"> Designing a website</label>
+            <label><input type="radio" name="q11" value="programming"> Developing software</label>
+        </div>
+
+        <div class="question">
+            <h3>12. How would you rate your communication skills?</h3>
+            <label><input type="radio" name="q12" value="web"> Excellent</label>
+            <label><input type="radio" name="q12" value="programming"> Good</label>
+            <label><input type="radio" name="q12" value="data"> Average</label>
+            <label><input type="radio" name="q12" value="ai"> Improving</label>
+        </div>
+
+        <div class="question">
+            <h3>13. What would you like to learn next?</h3>
+            <label><input type="radio" name="q13" value="ai"> Machine Learning</label>
+            <label><input type="radio" name="q13" value="web"> React / Web Development</label>
+            <label><input type="radio" name="q13" value="data"> Data Analytics</label>
+            <label><input type="radio" name="q13" value="programming"> Advanced Programming</label>
+        </div>
+
+        <div class="question">
+            <h3>14. Which career sounds most interesting?</h3>
+            <label><input type="radio" name="q14" value="ai"> AI/ML Engineer</label>
+            <label><input type="radio" name="q14" value="data"> Data Analyst</label>
+            <label><input type="radio" name="q14" value="web"> Web Developer</label>
+            <label><input type="radio" name="q14" value="programming"> Backend Developer</label>
+        </div>
+
+        <div class="question">
+            <h3>15. What is your biggest strength?</h3>
+            <label><input type="radio" name="q15" value="programming"> Problem solving</label>
+            <label><input type="radio" name="q15" value="ai"> Learning new technology</label>
+            <label><input type="radio" name="q15" value="data"> Analytical thinking</label>
+            <label><input type="radio" name="q15" value="web"> Creativity</label>
+        </div>
+
+        <button type="submit">Get My Career Recommendation</button>
+
+    </form>
+
+    <div id="result" class="result"></div>
+
+</div>
+
+<script src="assessment.js"></script>
+
+</body>
+</html>
